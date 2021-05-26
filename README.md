@@ -34,6 +34,8 @@ It will help you to find important files, leaks, Admin panels, etc.
 
 ![output](https://github.com/eslam3kl/GG-Dorking/blob/main/html.png)
 
+![details](https://github.com/eslam3kl/GG-Dorking/blob/main/html2.png)
+
 
 ----------------------------------------
 
