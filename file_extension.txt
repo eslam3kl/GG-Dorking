@@ -1,0 +1,221 @@
+" -FrontPage-" ext:pwd inurl:(service | authors | administrators | users)
+"liveice configuration file" ext:cfg
+"your password is" filetype:log
+allintitle: restricted filetype :mail
+allintitle: restricted filetype:doc site:gov
+allintitle: sensitive filetype:doc
+contacts ext:wml
+data filetype:mdb -site:gov -site:mil
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:"budget approved") 
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:"budget approved") inurl:confidential
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml) (intext:confidential salary | intext:"budget approved") inurl:confidential
+ext:CDX CDX
+ext:asa | ext:bak intext:uid intext:pwd -"uid..pwd" database | server | dsn
+ext:asp inurl:pathto.asp
+ext:ccm ccm -catacomb
+ext:cgi intext:"nrg-" " This web page was created on "
+ext:cgi inurl:editcgi.cgi inurl:file=
+ext:conf NoCatAuth -cvs
+ext:conf inurl:rsyncd.conf -cvs -man
+ext:dat bpk.dat
+ext:gho gho
+ext:ics ics
+ext:inc "pwd=" "UID="
+ext:ini Version=... password
+ext:ini Version=4.0.0.4 password
+ext:ini eudora.ini
+ext:ini intext:env.ini
+ext:jbf jbf
+ext:ldif ldif
+ext:log "Software: Microsoft Internet Information
+ext:log "Software: Microsoft Internet Information Services *.*"
+ext:log \"Software: Microsoft Internet Information Services *.*\"
+ext:mdb   inurl:*.mdb inurl:fpdb shop.mdb
+ext:mdb inurl:*.mdb inurl:fpdb shop.mdb
+ext:nsf nsf -gov -mil
+ext:passwd -intext:the -sample -example
+ext:plist filetype:plist inurl:bookmarks.plist
+ext:pqi pqi -database
+ext:reg "username=*" putty
+ext:txt "Final encryption key"
+ext:txt inurl:dxdiag
+ext:txt inurl:unattend.txt
+ext:vmdk vmdk
+ext:vmx vmx
+ext:yml database inurl:config
+filetype:ASP ASP
+filetype:ASPX ASPX
+filetype:BML BML
+filetype:CFM CFM
+filetype:CGI CGI
+filetype:DIFF DIFF
+filetype:DLL DLL
+filetype:DOC DOC
+filetype:FCGI FCGI
+filetype:HTM HTM
+filetype:HTML HTML
+filetype:JHTML JHTML
+filetype:JSP JSP
+filetype:MV MV
+filetype:PDF PDF
+filetype:PHP PHP
+filetype:PHP3 PHP3
+filetype:PHP4 PHP4
+filetype:PHTML PHTML
+filetype:PL PL
+filetype:PPT PPT
+filetype:PS ps
+filetype:QBW qbw
+filetype:SHTML SHTML
+filetype:STM STM
+filetype:SWF SWF
+filetype:TXT TXT
+filetype:XLS XLS
+filetype:asp   DBQ=" * Server.MapPath("*.mdb")
+filetype:asp "Custom Error Message" Category Source
+filetype:asp DBQ=" * Server.MapPath("*.mdb")
+filetype:asp DBQ=\" * Server.MapPath(\"*.mdb\") 
+filetype:asp “Custom Error Message" Category Source
+filetype:bak createobject sa
+filetype:bak inurl:"htaccess|passwd|shadow|htusers"
+filetype:bak inurl:\"htaccess|passwd|shadow|htusers\" 
+filetype:bkf bkf | filetype:blt "buddylist" | filetype:blt blt intext:screenname
+filetype:cfg auto_inst.cfg
+filetype:cfg ks intext:rootpw -sample -test -howto
+filetype:cfg mrtg "target
+filetype:cfm "cfapplication name" password
+filetype:cgi inurl:"Web_Store.cgi"
+filetype:cgi inurl:"fileman.cgi"
+filetype:cnf inurl:_vti_pvt access.cnf
+filetype:conf inurl:firewall -intitle:cvs
+filetype:conf inurl:firewall -intitle:cvs 
+filetype:conf inurl:proftpd. PROFTP FTP server configuration file reveals
+filetype:conf inurl:psybnc.conf "USER.PASS="
+filetype:conf slapd.conf
+filetype:config config intext:appSettings "User ID"
+filetype:config inurl:web.config inurl:ftp
+filetype:config web.config -CVS
+filetype:ctt Contact
+filetype:ctt ctt messenger
+filetype:dat "password.dat
+filetype:dat "password.dat"
+filetype:dat \"password.dat\" 
+filetype:dat wand.dat
+filetype:eml eml +intext:"Subject" +intext:"From" +intext:"To"
+filetype:eml eml +intext:\"Subject\" +intext:\"From\" +intext:\"To\" 
+filetype:eml eml +intext:"Subject" +intext:"From" +intext:"To"
+filetype:eml eml intext:"Subject" intext:"From" intext:"To"
+filetype:fp3 fp3
+filetype:fp5 fp5 -site:gov -site:mil -"cvs log"
+filetype:fp7 fp7
+filetype:inc dbconn
+filetype:inc dbconn 
+filetype:inf inurl:capolicy.inf
+filetype:inf sysprep
+filetype:ini ServUDaemon
+filetype:ini inurl:"serv-u.ini"
+filetype:ini inurl:flashFXP.ini
+filetype:ini wcx_ftp
+filetype:ini ws_ftp pwd
+filetype:ldb admin
+filetype:lic lic intext:key
+filetype:log "PHP Parse error" | "PHP Warning" | "PHP Error"
+filetype:log "See `ipsec –copyright"
+filetype:log See ipsec –copyright
+filetype:log access.log -CVS
+filetype:log cron.log
+filetype:log inurl:"password.log"
+filetype:log inurl:password.log
+filetype:log username putty PUTTY SSH client logs can reveal usernames
+filetype:log “PHP Parse error" | “PHP Warning" | “PHP Error"
+filetype:mbx mbx intext:Subject
+filetype:mdb inurl:users.mdb
+filetype:mdb wwforum
+filetype:myd myd -CVS
+filetype:netrc password
+filetype:ora ora
+filetype:ora tnsnames
+filetype:pass pass intext:userid
+filetype:pdb pdb backup (Pilot | Pluckerdb)
+filetype:pdf "Assessment Report" nessus
+filetype:pem intext:private
+filetype:php inurl:"logging.php" "Discuz" error
+filetype:php inurl:index inurl:phpicalendar -site:sourceforge.net
+filetype:php inurl:ipinfo.php "Distributed Intrusion Detection System"
+filetype:php inurl:vAuthenticate
+filetype:pl intitle:"Ultraboard Setup"
+filetype:pot inurl:john.pot
+filetype:properties inurl:db intext:password
+filetype:pst inurl:"outlook.pst"
+filetype:pst pst -from -to -date
+filetype:pwd service
+filetype:pwl pwl
+filetype:qbb qbb
+filetype:rdp rdp
+filetype:reg "Terminal Server Client"
+filetype:reg reg +intext:"defaultusername" +intext:"defaultpassword"
+filetype:reg reg +intext:\"defaultusername\" +intext:\"defaultpassword\" 
+filetype:reg reg +intext:â? WINVNC3â?
+filetype:reg reg +intext:"defaultusername" +intext:"defaultpassword"
+filetype:reg reg HKEY_ Windows Registry exports can reveal
+filetype:reg reg HKEY_CURRENT_USER SSHHOSTKEYS
+filetype:reg reg intext:"defaultusername" intext:"defaultpassword"
+filetype:reg reg intext:Ã¢? WINVNC3Ã¢?
+filetype:url +inurl:"ftp://" +inurl:";@"
+filetype:url +inurl:\"ftp://\" +inurl:\";@\" 
+filetype:url +inurl:"ftp://" +inurl:";@"
+filetype:url inurl:"ftp://" inurl:";@"
+filetype:vcs vcs
+filetype:wab wab
+filetype:xls -site:gov inurl:contact
+filetype:xls inurl:"email.xls"
+filetype:xls username password email
+intext:"A syntax error has occurred" filetype:ihtml
+intext:"Certificate Practice Statement" filetype:PDF | DOC
+intext:"Session Start * * * *:*:* *" filetype:log
+intext:"Tobias Oetiker" "traffic analysis"
+intext:"incorrect syntax near"
+intext:(password | passcode) intext:(username | userid | user) filetype:csv
+intext:ViewCVS inurl:Settings.php
+intextpassword | passcode)   intextusername | userid | user) filetype:csv
+intextpassword | passcode) intextusername | userid | user) filetype:csv
+intitle:"Error Occurred While Processing Request" WHERE (SELECT|INSERT) filetype:cfm
+intitle:"Error Occurred" "The error occurred in" filetype:cfm
+intitle:"curriculum vitae" filetype:doc
+intitle:"urchin (5|3|admin)" ext:cgi
+intitle:index.of intext:"secring.skr"|"secring.pgp"|"secring.bak"
+intitle:intranet inurl:intranet intext:"phone"
+intitle:rapidshare intext:login
+inurl:"GRC.DAT" intext:"password"
+inurl:"NmConsole/Login.asp" | intitle:"Login – Ipswitch WhatsUp Professional 2005″ | intext:"Ipswitch WhatsUp 
+inurl:"printer/main.html" intext:"settings"
+inurl:"sitescope.html" intitle:"sitescope" intext:"refresh" -demo
+inurl:"slapd.conf" intext:"credentials" -manpage -"Manual Page" -man: -sample
+inurl:"slapd.conf" intext:"rootpw" -manpage -"Manual Page" -man: -sample
+inurl:"smb.conf" intext:"workgroup" filetype:conf conf
+inurl:"wvdial.conf" intext:"password"
+inurl:*db filetype:mdb
+inurl:CrazyWWWBoard.cgi intext:"detailed debugging information"
+inurl:admin filetype:db
+inurl:admin filetype:xls
+inurl:backup filetype:mdb
+inurl:ccbill filetype:log
+inurl:email filetype:mdb
+inurl:forum filetype:mdb
+inurl:forward filetype:forward -cvs
+inurl:htpasswd filetype:htpasswd
+inurl:lilo.conf filetype:conf password -tatercounter2000 -bootpwd -man
+inurl:nuke filetype:sql
+inurl:odbc.ini ext:ini -cvs
+inurl:ospfd.conf intext:password -sample -test -tutorial -download
+inurl:perform filetype:ini
+inurl:perform.ini filetype:ini
+inurl:proxy | inurl:wpad ext:pac | ext:dat findproxyforurl
+inurl:secring ext:skr | ext:pgp | ext:bak
+inurl:ssl.conf filetype:conf
+inurl:vtund.conf intext:pass -cvs
+inurl:webalizer filetype:png -.gov -.edu -.mil -opendarwin
+inurl:wp-config.php intext:DB_PASSWORD
+inurl:zebra.conf intext:password -sample -test -tutorial -download
+nurl:php.ini filetype:ini
+signin filetype:url

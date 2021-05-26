@@ -1,0 +1,49 @@
+intitle:index.of administrators.pwd
+intitle:Index.of etc shadow
+intitle:"index of"  myd size
+intitle:"Index Of" -inurl:maillog maillog size
+intitle:"Index Of" cookies.txt size
+intitle:"Index of" upload size parent directory
+intitle:"index.of *" admin news.asp configview.asp
+intitle:"index.of" .diz .nfo last modified
+intitle:"PHP Advanced Transfer" (inurl:index.php | inurl:showrecent.php )
+intitle:"PhpMyExplorer" inurl:"index.php" -cvs
+intitle:index.of "Apache" "server at"
+intitle:index.of cleanup.log
+intitle:index.of dead.letter
+intitle:index.of inbox
+intitle:index.of inbox dbx
+intitle:index.of ws_ftp.ini
+LeapFTP intitle:"index.of./" sites.ini modified
+server-dbs "intitle:index of"
+allinurl:"index.php" "site=sglinks"
+inurl:/counter/index.php intitle:" PHPCounter 7.*"
+"Index of /"  .htaccess
+"Index of /"  passwd
+"Index of /"  password.txt
+"Index of /admin"
+"Index of /mail"
+"Index Of /network" "last modified"
+"Index of /password"
+"index of /private" site:mil
+"index of /private" -site:net -site:com -site:org
+allintitle: "index of/admin"
+allintitle: "index of/root"
+intitle:"Index of" ".htpasswd" "htgroup" -intitle:"dist" -apache -htpasswd.c
+intitle:"Index of" .sh_history
+intitle:"Index of" cfide
+intitle:"index of" etc/shadow
+intitle:"index of" htpasswd
+intitle:"index of" master.passwd
+intitle:"index of" members OR accounts
+intitle:"index of" passwd
+intitle:"index of" people.lst
+intitle:"index of" pwd.db
+intitle:"index of" spwd
+intitle:"Index of" spwd.db passwd -pam.conf
+intitle:"index of" user_carts OR user_cart
+intitle:"Index of..etc" passwd
+intitle:index.of master.passwd
+intitle:index.of passwd passwd.bak
+intitle:index.of people.lst
+intitle:index.of trillian.ini
