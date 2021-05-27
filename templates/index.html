@@ -1,0 +1,92 @@
+{% from 'section.html' import section %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub & Google Dorking</title>
+    <h2 style="text-align: center;">GG Dorking</h2>
+    <h3 style="text-align: center;">Coded By Eslam Akl @eslam3kl</h3>
+    </br>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .header {
+            padding: 10px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-size: 30px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+        .collapsible:after {
+            content: "\002B";
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            font-size: 20px;
+            background-color: rgb(44, 108, 128);
+            margin-left: 5px;
+            float: right;
+            text-align: center;
+
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+{% for sec in sections %}
+{% set elems=sec['elements'] %}
+{% set title=sec['title'] %}
+{{section(elems,title)}}
+{% endfor %}
+<script type="text/javascript">
+
+    document.querySelectorAll('.collapsible').forEach(item => {
+        item.addEventListener('click', event => {
+            event.target.classList.toggle("active");
+            var content = event.target.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        })
+    })
+
+</script>
+</body>
+</html>
