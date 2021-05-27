@@ -1,0 +1,11 @@
+{% macro section(elements,title) -%}
+<button class="collapsible">{{ title }}</button>
+<div class="content">
+    {% for element in elements %}
+    [{{loop.index}}] {% if element['subtitle'] %} {{element.subtitle}}</br>{% endif %}
+    {% if element['link'] %} <a href="{{element.link}}" target="_blank">{{element.text}}</a> </br> {% endif %}
+    {% if element['full'] %} <a href="{{element.full}}" target="_blank">Full Domain</a> </br> {% endif %}
+    {% if element['no_tld'] %} <a href="{{element.no_tld}}" target="_blank">Without TLD</a> </br> {% endif %}
+    {% endfor %}
+</div>
+{%- endmacro %}
