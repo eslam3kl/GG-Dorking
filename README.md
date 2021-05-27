@@ -32,20 +32,26 @@ It will help you to find important files, leaks, Admin panels, etc.
 ----------------------------------------------------------------------
 ## Example
 
+Yahoo will be our target
+
 **Run the tool**
 
 `python3 gg-dorking.py yahoo.com`
 
-![Run_tool](https://github.com/eslam3kl/GG-Dorking/blob/main/start.png)
+![Run_tool](https://github.com/eslam3kl/GG-Dorking/blob/main/screenshots/start.png)
 
 **The output file**
+
 > output file: yahoo.html
 
-![output](https://github.com/eslam3kl/GG-Dorking/blob/main/html.png)
+
+![output](https://github.com/eslam3kl/GG-Dorking/blob/main/screenshots/results1.png)
+
 
 **Every section with more details**
 
-![details](https://github.com/eslam3kl/GG-Dorking/blob/main/html2.png)
+
+![details](https://github.com/eslam3kl/GG-Dorking/blob/main/screenshots/results2.png)
 
 
 ----------------------------------------
