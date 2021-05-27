@@ -87,6 +87,7 @@ def google_elements(elems):
 
 
 for key in config._dict.keys():
+    continue if key == 'github'
     elems = google_elements(config[key].elements())
     sections.append(
         {"title": f"{config[key].title()} [{len(elems)}]", "elements": elems}
