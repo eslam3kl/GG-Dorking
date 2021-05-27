@@ -4,15 +4,6 @@ GG Dorking is a python tool to generate GitHub and Google dorking links for pent
 It will help you to find important files, leaks, Admin panels, etc. 
 
 ----------------------------------------------------------------------
-## Install
-
-`git clone https://github.com/eslam3kl/GG-Dorking`
-
-`cd GG-Dorking`
-
-`python3 -m pip install -r requirements.txt`
-
-----------------------------------------------------------------------
 ## Results content
 
 | Category                     | no. of links   |
@@ -23,6 +14,16 @@ It will help you to find important files, leaks, Admin panels, etc.
 | Index of files               | 49 Link        |
 | Vulnerabilities (SQLi & LFI) | 30 Link        |
 | Others                       | 235 Link       |
+
+
+----------------------------------------------------------------------
+## Installation
+
+```
+git clone https://github.com/eslam3kl/GG-Dorking
+cd GG-Dorking
+python3 -m pip install -r requirements.txt
+```
 
 ----------------------------------------------------------------------
 ## Usage
@@ -42,7 +43,7 @@ Yahoo will be our target
 
 **The output file**
 
-> output file: yahoo.html
+> output file by default will be target.html but you can change it using `--out` option
 
 
 ![output](https://github.com/eslam3kl/GG-Dorking/blob/main/screenshots/results1.png)
