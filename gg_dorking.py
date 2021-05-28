@@ -1,3 +1,5 @@
+import sys
+
 import jsoncfg
 import jinja2
 from termcolor import colored
@@ -13,6 +15,7 @@ parser.add_argument(
     help="Output File name, defaults to {target}.html",
     required=False,
 )
+parser.add_argument("--config", nargs="?", help="Config file, defaults to config.json")
 try:
     args = parser.parse_args()
 except:
@@ -38,16 +41,29 @@ tool_header2 = """	   Coded By: Eslam Akl
 	Blog: eslam3kl.medium.com
 """
 
-config = jsoncfg.load_config("config.json")
 sections = []
 dirEnv = jinja2.Environment(loader=jinja2.FileSystemLoader(searchpath="./templates"))
-
 index_template = dirEnv.get_template("index.html")
+
 print(colored(tool_header, "red", attrs=["bold"]))
 print(colored(tool_header2, "yellow", attrs=["bold"]))
 print(colored(content, "green"))
+
 target = args.target
 output = args.out if args.out else f"{target}.html"
+config_file = args.config if args.config else "config.json"
+
+try:
+    config = jsoncfg.load_config(config_file)
+except FileNotFoundError as e:
+    print("File error: " + colored(f"No such file or directory '{config_file}'", "red", attrs=["bold"]))
+    exit(1)
+except jsoncfg.parser.JSONConfigParserException as e:
+    print("JSON error: " + colored(f"{e}", "red"))
+    exit(1)
+except:
+    print("Oops!", sys.exc_info()[0], "occurred.")
+    exit(1)
 
 github_elements = list(
     map(
@@ -87,7 +103,8 @@ def google_elements(elems):
 
 
 for key in config._dict.keys():
-    continue if key == 'github'
+    if key == "github":
+        continue
     elems = google_elements(config[key].elements())
     sections.append(
         {"title": f"{config[key].title()} [{len(elems)}]", "elements": elems}
