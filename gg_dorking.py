@@ -63,6 +63,7 @@ except jsoncfg.parser.JSONConfigParserException as e:
     exit(1)
 except:
     print("Oops!", sys.exc_info()[0], "occurred.")
+    exit(1)
 
 github_elements = list(
     map(
