@@ -69,9 +69,9 @@ github_elements = list(
     map(
         lambda x: {
             "full": "https://github.com/search?"
-            + urlencode({"q": f'"{target}"+{x}', "type": "Code"}),
+            + urlencode({"q": f'"{target}" {x}', "type": "Code"}),
             "no_tld": "https://github.com/search?"
-            + urlencode({"q": f'"{extract(target).domain}"+{x}', "type": "Code"}),
+            + urlencode({"q": f'"{extract(target).domain}" {x}', "type": "Code"}),
             "subtitle": x,
         },
         config["github"]["elements"](),
