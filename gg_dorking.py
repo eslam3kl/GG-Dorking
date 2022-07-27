@@ -112,5 +112,5 @@ for key in config._dict.keys():
 print(colored(f'Writing output to file "{output}"', "white", attrs=["bold"]))
 out = index_template.render(sections=sections)
 
-out_f = open(output, "w+")
+out_f = open(output, "w+", encoding="utf-8")
 print(out, file=out_f)
