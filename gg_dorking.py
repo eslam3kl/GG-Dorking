@@ -22,7 +22,7 @@ except:
     parser.print_help()
     exit(1)
 
-content = """
+content = r"""
 *---------------------------------------------*
 | GitHub Dorking (W/O TLD)     |   64 Link    |
 | SQL Error messages & Leaks   |   216 Link   |
@@ -32,7 +32,7 @@ content = """
 | Others                       |   235 Link   | 
 *---------------------------------------------*
 """
-tool_header = """
+tool_header = r"""
 ____ ____    ___  ____ ____ _  _ _ _  _ ____ 
 | __ | __ __ |  \ |  | |__/ |_/  | |\ | | __ 
 |__] |__]    |__/ |__| |  \ | \_ | | \| |__] 
