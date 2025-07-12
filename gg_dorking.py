@@ -38,7 +38,7 @@ ____ ____    ___  ____ ____ _  _ _ _  _ ____
 |__] |__]    |__/ |__| |  \ | \_ | | \| |__] 
 """
 tool_header2 = """	   Coded By: Eslam Akl
-	Blog: eslam3kl.medium.com
+	Blog: eslam3kl.gitbook.io
 """
 
 sections = []
